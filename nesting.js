@@ -50,7 +50,15 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for(let i=employees.length-1; i>=0; i--){
+  if (employees[i].firstName === 'Theo'){
+   employees.splice(i,1)
+  } if (employees[i].firstName === 'Lorie'){
+ employees[i].department = 'HR'
+  }
+}  return employees;
+}
 
 
 
@@ -69,7 +77,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+function removeDuplicates(){
+  workplaceAccidents.sort()
+  for(let i=workplaceAccidents.length-1;i>=0;i--){
+    if (workplaceAccidents[i] == workplaceAccidents[i-1]){
+    workplaceAccidents.splice(i,1);
+    }
+  }
+  return workplaceAccidents;
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -97,8 +113,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = 'eat food';
+var fluffy2ndFriend = 'Lazy Bones';
 
 
 
@@ -139,8 +155,13 @@ var myCar = {
 */
 
 //Code Here
-
-
+function recordCleaner(myCar){
+  for (var i=0;i<array.length;i++){
+   if (myCar.atFaultForAccident === true){
+     return myCar.accidends.atFaultForAccident = false
+   } 
+ }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -157,6 +178,20 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+function looper(numsArr){
 
+  };
+// function looper(){
+// for(i=0;i<numsArr.length;1++)
+// {
+//   for (j=0;i<numsArr[i].length;j++){
+//     if(numsArr[i]%2 === 0){
+//       return numsArr[i] = 'even'
+//     } else {
+//       return numsArr[i] = 'odd'
+//     }
+//   }
+//   return numsArr;
+// }
 
+  
